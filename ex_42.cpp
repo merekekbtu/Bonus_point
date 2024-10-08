@@ -1,21 +1,20 @@
 #include <iostream>
-#include <cctype>  // Для функций islower, isupper, tolower, toupper
+#include <cctype>  
 
-// Функция для изменения регистра символа
 char ChangeCase(char c) {
     if (islower(c)) {
-        return toupper(c);  // Если буква строчная, преобразуем в заглавную
+        return toupper(c);  
     } else if (isupper(c)) {
-        return tolower(c);  // Если буква заглавная, преобразуем в строчную
+        return tolower(c);  
     }
-    return c;  // Если это не буква, возвращаем символ без изменений
+    return c;  
 }
 
 int main() {
     char c;
-    std::cin >> c;  // Считываем символ
+    std::cin >> c;  
     
-    std::cout << ChangeCase(c) << std::endl;  // Выводим результат
+    std::cout << ChangeCase(c) << std::endl;  
 
     return 0;
 }
