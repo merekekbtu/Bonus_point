@@ -1,15 +1,15 @@
 #include <iostream>
-#include <cctype>  // Для функции isdigit()
+#include <cctype>  
 
 bool IsDigit(unsigned char c) {
-    return isdigit(c);  // Используем стандартную функцию isdigit
+    return isdigit(c);  
 }
 
 int main() {
     char c;
-    std::cin >> c;  // Считываем символ
+    std::cin >> c;  
     
-    if (IsDigit(static_cast<unsigned char>(c))) {  // Приводим к unsigned char
+    if (IsDigit(static_cast<unsigned char>(c))) {  
         std::cout << "yes" << std::endl;
     } else {
         std::cout << "no" << std::endl;
